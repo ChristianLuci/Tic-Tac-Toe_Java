@@ -18,18 +18,18 @@ public abstract class Board extends JFrame {
     public int[]getAllEmptyCells(int[] boardState){
         int[]emptyCells;
 
-        ArrayList<Integer> lista = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
 
 
         for (int f = 0; f< ROW * COLUMN; f++){
             if (boardState[f] == 0){
-                lista.add(f);
+                list.add(f);
             }
 
         }
-        emptyCells = new int[lista.size()];
-        for (int i = 0; i < lista.size(); i++) {
-            emptyCells[i] = lista.get(i);
+        emptyCells = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            emptyCells[i] = list.get(i);
         }
         return emptyCells;
     }
